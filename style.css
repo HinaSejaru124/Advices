@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(218, 23%, 16%);
+  font-family: sans-serif;
+}
+main {
+  width: 27.5em;
+  min-height: 16.5em;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5em;
+  gap: 1.5em;
+  position: relative;
+  flex-direction: column;
+}
+span {
+  color: hsl(150, 100%, 66%);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+q {
+  color: hsl(217, 19%, 68%);
+  text-align: center;
+  font-size: 27px;
+}
+.divider {
+  background: url('images/pattern-divider-desktop.svg') no-repeat center;
+  width: 100%;
+  height: 3em;
+}
+#dice {
+  background: url('images/icon-dice.svg') hsl(150, 100%, 69%) no-repeat center;
+  height: 50px;
+  width: 50px;
+  bottom: -25px;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+#dice:hover {
+  background-color: hsl(150, 100%, 79%);
+  box-shadow: 0 0 15px hsl(150, 100%, 74%);
+}
+@media screen and (max-width: 450px) {
+  main {
+    width: 90%;
+    padding: 1.5em;
+  }
+}
